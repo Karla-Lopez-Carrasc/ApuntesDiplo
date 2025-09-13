@@ -93,5 +93,5 @@ func experimentWithScopes(){
 experimentWithScopes()
 
 
-//map, reduce y 
+//map, reduce y
 //: [Next](@next)
