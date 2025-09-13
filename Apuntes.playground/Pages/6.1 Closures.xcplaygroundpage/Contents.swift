@@ -52,4 +52,46 @@ volunteerCount.sort{ $0 < $1}
 volunteerCount.sort{ $0 > $1}
 
 
+func format(numbers: [Double], using formatter: (Double) -> String) -> [String] {
+    var result = [String]()
+    
+    for number in numbers {
+        let transformed = formatter(number)
+        result.append(transformed)
+    }
+    
+    return result
+}
+
+let rounder: (Double) -> String = {(number: Double) -> String in
+    let roundedNumber = number.rounded()
+    let intRounded = Int(roundedNumber)
+    return "\(intRounded)"
+    
+}
+
+let prices = [12.9983, 19.9974, 11.9962, 9.99674]
+format(numbers: prices, using: rounder)
+
+//MARK: scope de un closure
+func experimentWithScopes(){
+    
+    var numberOfTransformations = 0
+    
+    let rounder: (Double) -> String = {
+        numberOfTransformations += 1
+        return String(format: "$%0.2f", $0)
+    }
+    
+    let otherPrice = [12.9983, 19.9974, 11.9962, 9.99674]
+    let moneyFormatted = format(numbers: otherPrice, using: rounder)
+    
+    print(moneyFormatted)
+    
+}
+//() -> void
+experimentWithScopes()
+
+
+//map, reduce y 
 //: [Next](@next)
