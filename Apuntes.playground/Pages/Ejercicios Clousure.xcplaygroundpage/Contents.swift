@@ -97,16 +97,16 @@ compararStrings("Hola", "holahola"){
 //Crea una función transformarTexto que reciba un String y un closure.
 //El closure debe transformar el texto (ejemplo: pasarlo a mayúsculas, agregarle un prefijo, invertirlo). Devuelve el resultado.
 
-func transformarTexto (_ texto: String, transformacion: (String) -> String) -> String {
-    return transformarTexto
-}
+//func transformarTexto (_ texto: String, transformacion: (String) -> String) -> String {
+//    return transformarTexto
+//}
 
-let mayuscula = transformarTexto("Hola"){
-    return $0.uppercased()
-}
-
-print( transformarTexto("Hola"){ return $0 + " mundo" })
-
-
-print(mayuscula)
+//let mayuscula = transformarTexto("Hola"){
+//    return $0.uppercased()
+//}
+//
+//print( transformarTexto("Hola"){ return $0 + " mundo" })
+//
+//
+//print(mayuscula)
 //: [Next](@next)

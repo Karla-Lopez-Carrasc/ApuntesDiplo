@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='7.0' target-platform='ios' swift-version='6' display-mode='rendered' buildActiveScheme='true' importAppTypes='true'/>
+<playground version='7.0' target-platform='ios' swift-version='6' display-mode='rendered' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='1. Apuntes primera semana'/>
+        <page name='2.1 if-else'/>
+        <page name='2.2 Guard'/>
+        <page name='2.3 Ciclos'/>
+        <page name='2.4 Ternarios'/>
+        <page name='2.5 switch-case'/>
+        <page name='2.6 While'/>
+        <page name='3. 1 GIT'/>
+        <page name='6.1 Closures'/>
+        <page name='7.1 Clases'/>
+        <page name='7.2 Enumeradores'/>
+        <page name='8.1 Protocolos'/>
+        <page name='8.2 Extensiones'/>
+        <page name='8.3 Genericos'/>
+        <page name='Ejercicios 1'/>
+        <page name='Ejercicios ClasesEnum'/>
+        <page name='Ejercicios Clousure'/>
+        <page name='Ejercicios Extensiones'/>
+        <page name='Ejercicios Protocolos '/>
+    </pages>
+</playground>
